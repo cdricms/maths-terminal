@@ -1,0 +1,35 @@
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  position: fixed;
+}
+
+#content {
+  width: 100%;
+}
+
+.wrapper-hidden {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: grey;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.hidden {
+  width: 100%;
+}
+
+#eye {
+  cursor: pointer;
+  user-select: none;
+  height: fit-content;
+}
+
+#content {
+  margin: 2% 25vw 2% 25vw;
+}
