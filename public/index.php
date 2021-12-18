@@ -41,24 +41,23 @@
             
     </nav>
     <section id="content">
-    <?php
-        $t = $_GET['t'];
-        list($chapter_id, $examples_number) = explode("-", $t);
+        <?php
+            $t = $_GET['t'];
+            list($chapter_id, $examples_number) = explode("-", $t);
 
-        if (empty($chapter_id) or empty($examples_number)) include("./error.php");
+            if (empty($chapter_id) or empty($examples_number)) include("./error.php");
 
-        $sql = "SELECT * FROM chapters JOIN examples ON chapters_id=examples_chapter_id WHERE examples_number=$examples_number AND chapters_id=$chapter_id";
+            $sql = "SELECT * FROM chapters JOIN examples ON chapters_id=examples_chapter_id WHERE examples_number=$examples_number AND chapters_id=$chapter_id";
 
-        $datas = $db->query($sql);
-        $row = $datas->fetch();
+            $datas = $db->query($sql);
+            $row = $datas->fetch();
 
-        $path = $row["examples_path"];
+            $path = $row["examples_path"];
 
-        if (!empty($row)) {
-            include($path);
-        } else include("./error.php");
-    ?>
-
+            if (!empty($row)) {
+                include($path);
+            } else include("./error.php");
+        ?>
     </section>
     </main>
 </body>
