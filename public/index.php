@@ -39,7 +39,17 @@
 
                 while ($row=$datas->fetch()) {
                     $href = '?t=' . $ch['chapters_id'] . '-' . $row['examples_number'];
-                    echo '<a href="' . $href . '"> Exemple ' . $row['examples_number'] . '</a>';
+                    echo '<li>
+                            <ol class="section">
+                                <li class="chapters-examples">
+                                    <a id="examples" href="' . $href . '"> 
+                                    <strong>1.1.</strong>
+                                    Exemple ' . $row['examples_number'] . '</a>
+                                </li>
+                            </ol>
+                        </li>';
+                
+                                
                 }
 
                 echo "</details>";

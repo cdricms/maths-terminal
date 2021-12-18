@@ -1,10 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
+
+* , ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------*/
+/* Section / Content */
+/* ---------------- */
+
+body {
+  background-color: hsl(210, 25%, 8%);
+  color: white;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 main {
   display: flex;
   flex-direction: row;
 }
 
-nav {
-  position: fixed;
+.math {
+  line-height: 3;
 }
 
 #content {
@@ -33,3 +56,36 @@ nav {
 #content {
   margin: 2% 25vw 2% 25vw;
 }
+
+h1 {
+  line-height: 2.2;
+  font-weight: 200;
+  font-family: "Poppins", serif;
+}
+
+h2 {
+  padding-top: 10px;
+  line-height: 1.5;
+  font-weight: 200;
+  font-family: 'Merriweather', serif;
+}
+
+/* ------- */
+/* Navbar */
+/* -------*/
+
+nav {
+  position: fixed;
+  font-size: 20px;
+  font-family: 'Padauk', sans-serif;
+}
+
+
+
+#examples {
+  text-decoration: none;
+  color: white;
+
+}
+
+/* IMPORTANT use padauk font */
