@@ -1,0 +1,114 @@
+<h1 id="exemple-17---type-bac">Exemple 17 - Type BAC</h1>
+<h2 id="partie-a">Partie A</h2>
+<p><span class="math inline">\(g(x) = x + 2 - e^x \text{sur} [0; +\infty[\)</span></p>
+<ol type="1">
+<li><p>Limite de <span class="math inline">\(g\)</span> en <span class="math inline">\(+\infty\)</span> ?</p>
+<section class="hidden">
+<p>Nous sommes en présence d’une forme indéterminé, de la forme: “<span class="math inline">\(\infty - \infty\)</span>”</p>
+<p><span class="math display">\[
+g(x) = x(1 - \frac{e^x}{x})+2
+\]</span></p>
+<p><span class="math display">\[
+\begin{rcases}
+   \lim\limits_{x \to +\infty} x = +\infty \\
+   \lim\limits_{x \to +\infty} 1 - \frac{e^x}{x} = +\infty \text{ (C.C)}\\
+   \lim\limits_{x \to +\infty} 2 = 2
+\end{rcases} \text{par règles opératoires:} \lim\limits_{x \to +\infty} g(x) = -\infty
+\]</span></p>
+</section></li>
+<li><p>Tableau de variations de <span class="math inline">\(g\)</span>.</p>
+<section class="hidden">
+<p><span class="math inline">\(g\)</span> est dérivable sur <span class="math inline">\([0; +\infty[\)</span></p>
+<p><span class="math display">\[g\prime(x) = 1 - e^x\]</span></p>
+<p>On résout: <span class="math inline">\(1-e^x \geq 0\)</span></p>
+<p><span class="math display">\[
+\begin{array}{lcl}
+1-e^x &amp;\geq &amp;0\\
+-e^x &amp;\geq &amp; -1 \\
+e^x &amp;\leq &amp;1 \\
+e^x &amp;\leq &amp;e⁰ \\
+x &amp;\leq &amp;0
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{darray}{ |c| c c| }
+\hline
+x &amp; \alpha &amp; +\infty \\ \hline
+g\prime(x) &amp; \biggr\rvert &amp; - \\ \hline
+ \end{darray}
+\]</span></p>
+</section></li>
+<li><p>Démontrer que l’équation <span class="math inline">\(g(x) = 0\)</span> admet une solution unique appartenant à <span class="math inline">\([0; +\infty[\)</span>.</p>
+<section class="hidden">
+<p>La fonction <span class="math inline">\(g\)</span> est continue est strictement décroisstante sur <span class="math inline">\([0; +\infty[\)</span> dans <span class="math inline">\(]-\infty; 1]\)</span>, or <span class="math inline">\(0 \in ]-\infty;1]\)</span> donc d’après le théorème de la bijection: l’équation <span class="math inline">\(g(x) = 0\)</span> admet une solution unique <span class="math inline">\(\alpha\)</span> à <span class="math inline">\([0; +\infty[\)</span>.</p>
+</section></li>
+<li><p>Donner un encadrement de <span class="math inline">\(\alpha\)</span> à <span class="math inline">\(10^{-2}\)</span> près.</p>
+<section class="hidden">
+<p><span class="math display">\[
+\alpha \approx 1,146 \\
+\alpha \in [1,14; 1,15]
+\]</span></p>
+</section></li>
+<li><p>Donner le tableau de signes de la fonction <span class="math inline">\(f\)</span>.</p>
+<section class="hidden">
+</section></li>
+</ol>
+<h2 id="partie-b">Partie B</h2>
+<p><span class="math inline">\(f(x) = \frac{e^x - 1}{xe^x+1}\)</span> sur <span class="math inline">\([0; +\infty[\)</span>.</p>
+<ol type="1">
+<li><p>Limite de f en <span class="math inline">\(+\infty\)</span> ?</p>
+<section class="hidden">
+<p>Nous sommes en présence d’une forme indéterminée, de la forme: “<span class="math inline">\(\frac{\infty}{\infty}\)</span>”.</p>
+<p><span class="math display">\[
+ f(x) = \frac{e^x(1-\frac{1}{e^x})}{e^x(x+\frac{1}{e^x})} \lrArr \frac{1-\frac{1}{e^x}}{x+\frac{1}{e^x}}
+\]</span></p>
+<p><span class="math display">\[
+\begin{rcases}
+  \lim\limits_{x \to +\infty} 1-\frac{1}{e^x} = 1 \\
+  \lim\limits_{x \to +\infty} x+\frac{1}{e^x} = +\infty \\
+\end{rcases} \text{par quotient:} \lim\limits_{x \to +\infty} f(x) = 0 \\
+\text{alors la droite d&#39;équation } y = 0 \text{ est une asymptote horizontale à } Cf \text{, au voisinage de } +\infty.
+\]</span></p>
+</section></li>
+<li><p>Calculer <span class="math inline">\(f\prime(x)\)</span>.</p>
+<section class="hidden">
+<p><span class="math inline">\(f\)</span> est de la forme <span class="math inline">\(\frac{u(x)}{v(x)}\)</span></p>
+<p><span class="math display">\[
+\begin{array}{ l c l }
+&amp; \text{avec} &amp; \\
+u(x) = e^x-1 &amp; \text{ et } &amp; v(x) = xe^x+1 \\
+u\prime(x) = e^x &amp;  &amp; v\prime(x) = 1e^x+e^xx \\
+&amp; &amp;= e^x(x+1)
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{array}{ll}
+f\prime(x) &amp;= \frac{u\prime(x) \times v(x) - v\prime(x) \times u(x)}{v^2(x)} \\
+           &amp;= \frac{e^x(xe^x+1) - e^x(x+1)(e^x-1)}{(xe^x+1)²} \\
+           &amp;= \frac{e^x(x-e^x+2)}{(xe^x+1)²} \\
+           &amp;= \frac{e^xg(x)}{(xe^x+1)²}
+\end{array}
+\]</span></p>
+</section></li>
+<li><p>Prouver que <span class="math inline">\(f(\alpha) = \frac{1}{\alpha+1}\)</span>.</p>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{array}{ll}
+f(\alpha) &amp;= \frac{e^x-1}{\alpha e^x+1} \\\\
+\text{or } g(x) &amp;= 0 \\
+\alpha + 2 - e^\alpha &amp;= 0 \\
+e^\alpha &amp;= \alpha + 2
+\end{array}
+\]</span></p>
+<p>Donc:</p>
+<p><span class="math display">\[
+f(\alpha) = \frac{\alpha + 2 - 1}{\alpha (\alpha + 2) + 1}
+= \frac{\alpha + 1}{\alpha² +2\alpha + 1}
+= \frac{\alpha + 1}{(\alpha + 1)²}
+= \frac{1}{\alpha + 1}
+\]</span></p>
+</section></li>
+<li><p>Tableau de variations de <span class="math inline">\(f\)</span>. <span class="math inline">\(\forall x \in [0;+\infty[\)</span>, <span class="math inline">\(e^x &gt; 0\)</span> et <span class="math inline">\((xe^x + 1)² &gt; 0\)</span> donc <span class="math inline">\(f\prime(x)\)</span> est du signe de <span class="math inline">\(g(x)\)</span>.</p>
+<section class="hidden">
+</section></li>
+</ol>
