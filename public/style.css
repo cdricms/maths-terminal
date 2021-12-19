@@ -19,22 +19,78 @@
   --sidebar-fg: #c8c9db;
   --sidebar-hover: white:
 }
+/* ------------ */
+ /* Swapper themes*/
+ /* ---------- */
 
-/* ------------------*/
-/* Section / Content */
-/* ---------------- */
+ body {
+  --accent-color: #171c22;
+  --background-color: hsl(210, 25%, 8%);
+  --text-color: white;
+  --text-color-hover: #ffb454;
+  --button-text-color: var(--background-color);
+  --transition-delay: 1s;
 
-body {
-  background-color: hsl(210, 25%, 8%);
-  color: white;
+  transition: var(--transition-delay);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: 'Open Sans', sans-serif;
 }
 
+body.light {
+  --accent-color: hsl(60, 3%, 75%);
+  --background-color: hsl(60, 9%, 87%);;
+  --text-color: black;
+  --text-color-hover: #0b00a5;
+}
 
 main {
   display: flex;
   flex-direction: row;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: var(--transition-delay);
 }
+
+ #container-swapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: var(--transition-delay);
+}
+
+.theme-toggle-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 15px 15px 0 0;
+  padding: .5em 1em;
+  border-radius: .3em;
+  border: none;
+  outline: none;
+  transition: var(--transition-delay);
+  transform: scale(1);
+}
+
+.theme-toggle-button .icon {
+  margin-right: .5em ;
+}
+
+.theme-toggle-button:hover,
+.theme-toggle-button:focus {
+  transform: scale(1.1);
+}
+
+
+/* ------------------*/
+/* Section / Content */
+/* ---------------- */
 
 .math {
   line-height: 3;
@@ -49,9 +105,10 @@ main {
   display: flex;
   width: 100%;
   align-items: center;
-  background-color: #171c22;
+  background-color: var(--accent-color);
   border-radius: 1em;
   padding: 1em;
+  transition: var(--transition-delay);
 }
 
 .hidden {
@@ -91,8 +148,9 @@ h2 {
   font-size: 0.875em;
   box-sizing: border-box;
   overscroll-behavior-y: contain;
-  background-color: var(--sidebar-bg);
-  color: var(--sidebar-fg);
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  transition: var(--transition-delay);
 }
 
 .sidebar .sidebar-scrollbox {
@@ -103,11 +161,12 @@ h2 {
   left: 0;
   right: 0;
   padding: 10px 10px;
+  transition: var(--transition-delay);
 }
 
 .sidebar li {
   list-style: none;
-  color: var(--sidebar-fg);
+  color: var(--text-color);
 }
 
 .chapters {
@@ -129,11 +188,11 @@ summary {
 
 #examples {
   text-decoration: none;
-  color: var(--sidebar-fg);
+  color: var(--text-color);
 }
 
 #examples:hover {
-  color: #ffb454;
+  color: var(--text-color-hover);
 }
 
 /* IMPORTANT use padauk font */
