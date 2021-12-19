@@ -36,7 +36,8 @@
     <nav id="sidebar" class="sidebar">
         <div class="sidebar-scrollbox">
             <?php
-                $sql = 'SELECT * FROM chapters';
+                $sql = 
+                'SELECT * FROM chapters';
                 $datas = $db->query($sql);
                 $a = $datas->fetchAll();
 
@@ -57,8 +58,9 @@
                                 <li class="chapters-examples">
                                     <a id="examples" href="' . $href . '"> 
                                     <div id="examples-wrapper">
-                                    <strong id="bold">' . $ch['chapters_number'] . '.' . $row['examples_number'] . '.</strong>
-                                    Exemple ' . $row['examples_number'] . $type_bac . '</div></a>
+                                        <strong id="bold">' . $ch['chapters_number'] . '.' . $row['examples_number'] . '.</strong>
+                                        Exemple ' . $row['examples_number'] . $type_bac . '
+                                    </div></a>
                                 </li>
                             </ol>';
                             // End of li for numbers and examples

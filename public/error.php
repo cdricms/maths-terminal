@@ -9,7 +9,9 @@
 </head>
 <body>
     <div id="container-error">
-        <img id="svg-error" src="https://img.icons8.com/external-flatarticons-blue-flatarticons/100/000000/external-error-contact-us-flatarticons-blue-flatarticons.png"/>
+        <div id="img">
+            <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light'/>
+        </div>
         <div id="error-title">
             <h1> Oops ! Que fais-tu ici ?</h1>
             <div id="error-explications">
@@ -21,5 +23,13 @@
         <!-- End/error-title -->
     </div>
     <!-- End/container-error -->
+    <div id="container-error">
+        <div id="issues">
+            <p> Si tu veux continué l'expérience sur notre site essaie plutôt de naviguer graĉe au différents choix qui se trouvent sur ta gauche !
+        </div>
+        <div id="img">
+            <img src='https://avataaars.io/?avatarStyle=Circle&topType=WinterHat1&accessoriesType=Blank&hatColor=Gray02&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light'/>
+        </div>
+    </div>
 </body>
 </html>

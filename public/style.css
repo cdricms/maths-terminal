@@ -19,6 +19,7 @@
   --sidebar-fg: #c8c9db;
   --sidebar-hover: white:
 }
+
 /* ------------ */
  /* Swapper themes*/
  /* ---------- */
@@ -38,11 +39,15 @@
 }
 
 body.light {
-  --accent-color: hsl(60, 3%, 75%);
+  --accent-color: hsl(0, 0%, 81%);
   --background-color: hsl(60, 9%, 87%);;
   --text-color: black;
-  --text-color-hover: #0b00a5;
+  --text-color-hover: #a50000;
 }
+
+/* hsl(60, 3%, 75%) */
+
+/* hsl(0, 0%, 81%) */
 
 main {
   display: flex;
@@ -96,7 +101,8 @@ main {
 
 .to-know {
   margin: 1em 0 1em 0;
-  background-color: red;
+  background-color: var(--accent-color);
+  color: red;
   border-radius: 1em;
   padding: 1em;
 }
@@ -151,13 +157,19 @@ h2 {
 /*Désolé pour le désordre:*/
 #examples-wrapper {
   display: flex;
-  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1em;
 }
 
 .type-bac {
-  background-color: red;
-  padding: 0 1em 0 1em;
+  color: red;
+  background-color: var(--background-color);
+  padding: 0 0.5em;
+  margin-top: 5px;
+  margin-left: 5px;
   border-radius: 1em;
+  transition: var(--transition-delay);
 }
 
 .sidebar {
@@ -216,6 +228,10 @@ summary {
   color: var(--text-color-hover);
 }
 
+
+#title-infos {
+  text-align: center;
+}
 /* IMPORTANT use padauk font */
 
 
@@ -225,12 +241,13 @@ summary {
 
 #container-error {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 }
 
-#svg-error {
-  width: 200px;
-  height: 200px;
+#img:nth-child(1) {
+  padding-right: 50px;
 }
+
+
