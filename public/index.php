@@ -40,10 +40,11 @@
                 $datas = $db->query($sql);
                 $a = $datas->fetchAll();
 
-                // echo '<h3 id="title-infos"> Voici la liste des chapitres associés à leurs numéros </h3>'; POUR CEDRIC SI TU VOIS A ME DIRE SI TU VEUX QUE L ON PRECISE OU NON CAR CA PEUT SUREMENT PARAITRE BISARD A COUP D OEIL
+                echo '<h3 id="title-infos"> Voici la liste des chapitres associés à leurs numéros </h3>';  //POUR CEDRIC SI TU VOIS A ME DIRE SI TU VEUX QUE L ON PRECISE OU NON CAR CA PEUT SUREMENT PARAITRE BISARD A COUP D OEIL
+                echo '<br/><hr/><br/>';
                 foreach ($a as $ch) {
                     $id = $ch['chapters_id'];
-                    $sql = "SELECT * FROM examples WHERE examples_chapter_id=$id";
+                    $sql = "SELECT * FROM examples WHERE examples_chapter_id=$id ORDER BY examples_number ASC";
                     $datas = $db->query($sql);
                         
                     echo '<summary><strong id="bold">' . $ch['chapters_number'] . '</strong>. ' . $ch['chapters_title'] . '</summary>';
@@ -53,7 +54,7 @@
                         echo '<ol class="chapters">
                                 <li class="chapters-examples">
                                     <a id="examples" href="' . $href . '"> 
-                                    <strong id="bold">1.1.</strong>
+                                    <strong id="bold">' . $ch['chapters_number'] . '.' . $row['examples_number'] . '.</strong>
                                     Exemple ' . $row['examples_number'] . '</a>
                                 </li>
                             </ol>';
