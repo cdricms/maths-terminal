@@ -24,40 +24,42 @@
 <body>
     <main>
 
-    <nav>
-        <?php
-            $sql = 'SELECT * FROM chapters';
-            $datas = $db->query($sql);
-            $a = $datas->fetchAll();
-
-            foreach ($a as $ch) {
-                $id = $ch['chapters_id'];
-                $sql = "SELECT * FROM examples WHERE examples_chapter_id=$id";
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-scrollbox">
+            <?php
+                $sql = 'SELECT * FROM chapters';
                 $datas = $db->query($sql);
+                $a = $datas->fetchAll();
 
-                echo '<details><summary>' . $ch['chapters_title'] . '</summary>';
+                // echo '<h3 id="title-infos"> Voici la liste des chapitres associés à leurs numéros </h3>'; POUR CEDRIC SI TU VOIS A ME DIRE SI TU VEUX QUE L ON PRECISE OU NON CAR CA PEUT SUREMENT PARAITRE BISARD A COUP D OEIL
+                foreach ($a as $ch) {
+                    $id = $ch['chapters_id'];
+                    $sql = "SELECT * FROM examples WHERE examples_chapter_id=$id";
+                    $datas = $db->query($sql);
+                        
+                    echo '<summary><strong id="bold">' . $ch['chapters_number'] . '</strong>. ' . $ch['chapters_title'] . '</summary>';
 
-                while ($row=$datas->fetch()) {
-                    $href = '?t=' . $ch['chapters_id'] . '-' . $row['examples_number'];
-                    echo '<li>
-                            <ol class="section">
+                    while ($row=$datas->fetch()) {
+                        $href = '?t=' . $ch['chapters_id'] . '-' . $row['examples_number'];
+                        echo '<ol class="chapters">
                                 <li class="chapters-examples">
                                     <a id="examples" href="' . $href . '"> 
-                                    <strong>1.1.</strong>
+                                    <strong id="bold">1.1.</strong>
                                     Exemple ' . $row['examples_number'] . '</a>
                                 </li>
-                            </ol>
-                        </li>';
-                
-                                
+                            </ol>';
+                            // End of li for numbers and examples
+                                    
+                    }
+
+                    echo "</details>";
                 }
 
-                echo "</details>";
-            }
-
-        ?>
-            
+            ?>
+        </div>
+        <!-- End/sidebar-scrollbox  -->
     </nav>
+    <!-- End/sidebar -->
     <section id="content">
         <?php
             $t = $_GET['t'];
@@ -77,6 +79,7 @@
             } else include("./error.php");
         ?>
     </section>
+    <!-- End/content -->
     </main>
 </body>
 </html>

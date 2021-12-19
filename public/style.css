@@ -2,11 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * , ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --sidebar-width: 300px;
+  --page-padding: 15px;
+  --content-max-width: 750px;
+  --menu-bar-height: 50px;
+  --sidebar-bg: #171c22;
+  --sidebar-fg: #c8c9db;
+  --sidebar-hover: white:
 }
 
 /* ------------------*/
@@ -16,7 +27,6 @@
 body {
   background-color: hsl(210, 25%, 8%);
   color: white;
-  font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -32,13 +42,14 @@ main {
 
 #content {
   width: 100%;
+  margin: 2% 25vw 2% 25vw;
 }
 
 .wrapper-hidden {
   display: flex;
   width: 100%;
   align-items: center;
-  background-color: grey;
+  background-color: #171c22;
   border-radius: 1em;
   padding: 1em;
 }
@@ -53,9 +64,6 @@ main {
   height: fit-content;
 }
 
-#content {
-  margin: 2% 25vw 2% 25vw;
-}
 
 h1 {
   line-height: 2.2;
@@ -74,18 +82,75 @@ h2 {
 /* Navbar */
 /* -------*/
 
-nav {
+.sidebar {
   position: fixed;
-  font-size: 20px;
-  font-family: 'Padauk', sans-serif;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  font-size: 0.875em;
+  box-sizing: border-box;
+  overscroll-behavior-y: contain;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-fg);
 }
 
+.sidebar .sidebar-scrollbox {
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 10px;
+}
 
+.sidebar li {
+  list-style: none;
+  color: var(--sidebar-fg);
+}
+
+.chapters {
+  display: flex;
+}
+
+.chapters-examples {
+  padding-left: 20px;
+  line-height: 2.5;
+}
+
+summary {
+  line-height: 1.7;
+}
+
+#bold {
+  font-weight: 700;
+}
 
 #examples {
   text-decoration: none;
-  color: white;
+  color: var(--sidebar-fg);
+}
 
+#examples:hover {
+  color: #ffb454;
 }
 
 /* IMPORTANT use padauk font */
+
+
+/* ------------ */
+/* Part: Error */
+/* ------------ */
+
+#container-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#svg-error {
+  width: 200px;
+  height: 200px;
+}
