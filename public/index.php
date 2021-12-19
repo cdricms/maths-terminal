@@ -50,12 +50,15 @@
                     echo '<summary><strong id="bold">' . $ch['chapters_number'] . '</strong>. ' . $ch['chapters_title'] . '</summary>';
 
                     while ($row=$datas->fetch()) {
+
+                        $type_bac = $row['examples_is_bac'] == 1 ? '<span class="type-bac">BAC</span>' : "";
                         $href = '?t=' . $ch['chapters_id'] . '-' . $row['examples_number'];
                         echo '<ol class="chapters">
                                 <li class="chapters-examples">
                                     <a id="examples" href="' . $href . '"> 
+                                    <div id="examples-wrapper">
                                     <strong id="bold">' . $ch['chapters_number'] . '.' . $row['examples_number'] . '.</strong>
-                                    Exemple ' . $row['examples_number'] . '</a>
+                                    Exemple ' . $row['examples_number'] . $type_bac . '</div></a>
                                 </li>
                             </ol>';
                             // End of li for numbers and examples

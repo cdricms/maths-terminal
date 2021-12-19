@@ -1,0 +1,55 @@
+<h1 id="exemple-9---type-bac">Exemple 9 - Type BAC</h1>
+<section class="to-know">
+<p>Limite de référence:</p>
+<p><span class="math inline">\(\lim\limits_{x \to +\infty} e^x = +\infty\)</span></p>
+</section>
+<ol type="1">
+<li>Prouver que: <span class="math inline">\(\lim\limits_{x \to +\infty} e^x = +\infty\)</span>.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{array}{l}
+e \approx 2,718 \\
+\lim\limits_{n \to +\infty} e^n = +\infty \\
+\text{ou encore:}\\
+\lim\limits_{x \to +\infty} e^x = +\infty
+\end{array}
+\]</span></p>
+</section>
+<ol start="2" type="1">
+<li>Prouver que <span class="math inline">\(\lim\limits_{x \to -\infty} e^x = 0\)</span></li>
+</ol>
+<section class="hidden">
+<p>On va poser <span class="math inline">\(x=-u\)</span></p>
+<p><span class="math display">\[
+\lim\limits_{x \to -\infty} e^x
+= \lim\limits_{u \to +\infty} e^{-u}
+= \lim\limits_{u \to +\infty} \frac{1}{e^u}
+= 0
+\]</span></p>
+</section>
+<section class="to-know">
+<p>Limite de référence:</p>
+<p><span class="math inline">\(\lim\limits_{x \to +\infty} e^x = +\infty\)</span></p>
+</section>
+<ol start="3" type="1">
+<li><span class="math inline">\(f(x) = 2e^x - \frac{1}{x}\)</span> sur <span class="math inline">\([0; +\infty[\)</span></li>
+</ol>
+<p>Limite en <span class="math inline">\(0\)</span> et en <span class="math inline">\(+\infty\)</span> ?</p>
+<section class="hidden">
+<p>En <span class="math inline">\(0⁺\)</span>:</p>
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to 0⁺ } 2e^x = 2 \\
+    \lim\limits_{x \to 0⁺ } \frac{1}{x} = +\infty \\
+\end{rcases} \text{par différence: } \lim\limits_{x \to 0⁺} f(x) = -\infty
+\]</span></p>
+<hr />
+<p>En <span class="math inline">\(+\infty\)</span>:</p>
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to +\infty } 2e^x = +\infty \\
+    \lim\limits_{x \to +\infty } \frac{1}{x} = 0⁺ \\
+\end{rcases} \text{par différence: } \lim\limits_{x \to +\infty} f(x) = +\infty
+\]</span></p>
+</section>

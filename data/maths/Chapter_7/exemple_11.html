@@ -1,0 +1,56 @@
+<h1 id="exemple-11---type-bac">Exemple 11 - Type BAC</h1>
+<p><span class="math inline">\(f(x) = xe^{-x}+3\)</span> sur <span class="math inline">\(\rm I\!R\)</span>.</p>
+<ol type="1">
+<li>Limite de <span class="math inline">\(f\)</span> en <span class="math inline">\(-\infty\)</span> ?</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to -\infty } x = -\infty \\
+    \lim\limits_{x \to -\infty } e^{-x} = +\infty \\
+    \lim\limits_{x \to -\infty } 3 = 3 \\
+\end{rcases} \text{par règles opératoires: } \lim\limits_{x \to -\infty} f(x) = -\infty
+\]</span></p>
+</section>
+<ol start="2" type="1">
+<li>Limite de <span class="math inline">\(f\)</span> en <span class="math inline">\(+\infty\)</span> ?</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to +\infty } xe^{-x} = 0⁺ \text{ (C.C)} \\
+    \lim\limits_{x \to +\infty } 3 = 3 \\
+\end{rcases} \text{par somme: } \lim\limits_{x \to +\infty} f(x) = 3
+\]</span></p>
+</section>
+<ol start="3" type="1">
+<li>Dresser le tableau de variations de <span class="math inline">\(f\)</span>.</li>
+</ol>
+<section class="hidden">
+<p><span class="math inline">\(f\)</span> est dérivable sur <span class="math inline">\(\rm I\!R\)</span></p>
+<p><span class="math inline">\(f\)</span> est de la forme <span class="math inline">\(u(x) \times v(x)+3\)</span>.</p>
+<p><span class="math display">\[
+\begin{array}{ l c l }
+&amp; \text{avec} &amp; \\
+u(x) = x &amp; \text{ et } &amp; v(x) = e^{-x} \\
+u\prime(x) = 1 &amp;  &amp; v\prime(x) = -e^{-x} \\
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{array}{ll}
+f\prime(x) &amp;= \large u\prime(x) \times v(x) + v\prime(x) \times u(x) \\
+            &amp;= \large 1e^{-x} -e^{-x} \times x \\
+            &amp;= \large e^{-x}(1-x)
+\end{array}
+\]</span></p>
+<p><span class="math inline">\(\forall x \in \rm I\!R\)</span>, <span class="math inline">\(e^{-x} &gt; 0\)</span>, donc <span class="math inline">\(f\prime(x)\)</span> est du signe de <span class="math inline">\(1-x\)</span>.</p>
+<p>On résout: <span class="math inline">\(1-x \geq 0\)</span></p>
+<p><span class="math display">\[
+   \begin{array}{lcl}
+   1-x &amp;\geq &amp;0\\
+   -x &amp;\geq &amp; -1 \\
+   x &amp;\leq &amp; 1
+   \end{array}
+\]</span></p>
+<p>// TODO: Faire le tableau de variations.</p>
+</section>

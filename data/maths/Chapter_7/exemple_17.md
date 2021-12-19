@@ -102,6 +102,8 @@ $f(x) = \frac{e^x - 1}{xe^x+1}$ sur $[0; +\infty[$.
 2. Calculer $f\prime(x)$.
    <section class="hidden">
 
+   $f$ est dérivable sur $[0;+\infty[$
+
    $f$ est de la forme $\frac{u(x)}{v(x)}$
 
    $$
@@ -115,10 +117,10 @@ $f(x) = \frac{e^x - 1}{xe^x+1}$ sur $[0; +\infty[$.
 
    $$
    \begin{array}{ll}
-   f\prime(x) &= \frac{u\prime(x) \times v(x) - v\prime(x) \times u(x)}{v^2(x)} \\
-              &= \frac{e^x(xe^x+1) - e^x(x+1)(e^x-1)}{(xe^x+1)²} \\
-              &= \frac{e^x(x-e^x+2)}{(xe^x+1)²} \\
-              &= \frac{e^xg(x)}{(xe^x+1)²}
+   f\prime(x) &= \frac{\large u\prime(x) \times v(x) - v\prime(x) \times u(x)}{\large v^2(x)} \\
+              &= \frac{\large e^x(xe^x+1) - e^x(x+1)(e^x-1)}{(\large xe^x+1)²} \\
+              &= \frac{\large e^x(x-e^x+2)}{\large (xe^x+1)²} \\
+              &= \frac{\large e^xg(x)}{\large (xe^x+1)²}
    \end{array}
    $$
 

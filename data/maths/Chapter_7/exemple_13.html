@@ -1,0 +1,62 @@
+<h1 id="exemple-13---type-bac">Exemple 13 - Type BAC</h1>
+<p><span class="math inline">\(f(x) = e^{2x}-e^x-x\)</span> sur <span class="math inline">\(\rm I\!R\)</span></p>
+<ol type="1">
+<li>Limite de <span class="math inline">\(f\)</span> en <span class="math inline">\(-\infty\)</span> et en <span class="math inline">\(+\infty\)</span>.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to -\infty} e^{2x} = 0 \\
+    \lim\limits_{x \to -\infty} e^x = 0 \\
+    \lim\limits_{x \to -\infty} x = -\infty
+\end{rcases} \text{par règles opératoires:} \lim\limits_{x \to -\infty} f(x) = +\infty
+\]</span></p>
+<hr />
+<p>En <span class="math inline">\(+\infty\)</span>.</p>
+<p>On est en présence d’une forme indéterminée, du type: “<span class="math inline">\(\infty - \infty\)</span>”.</p>
+<p><span class="math display">\[
+   \begin{array}{ll}
+   f(x) &amp;= e^x\times e^x -e^x -x \\
+        &amp;= e^x(e^x-1-xe^{-x})
+   \end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to +\infty} e^x = +\infty \\
+    \lim\limits_{x \to +\infty} 1 = 1 \\
+    \lim\limits_{x \to +\infty} xe^{-x} = 0 \text{(C.C)}
+\end{rcases} \text{par règles opératoires:} \lim\limits_{x \to +\infty} f(x) = +\infty
+\]</span></p>
+</section>
+<ol start="2" type="1">
+<li><p>Calculer <span class="math inline">\(f\prime(x)\)</span>.</p>
+<section class="hidden">
+<p><span class="math inline">\(f\)</span> est de la forme : <span class="math inline">\(e^{2x}-e^x-x\)</span></p>
+<p><span class="math display">\[
+f\prime(x) = 2e^{2x}-e^x-1
+\]</span></p>
+</section></li>
+<li><p>Après avoir vérifier que <span class="math inline">\(f\prime(x) = (e^x-1)(2e^x+1)\)</span>, dresser le tableau de variations de <span class="math inline">\(f\)</span>.</p></li>
+</ol>
+<section class="hidden">
+<p>On a:</p>
+<p><span class="math display">\[
+   \begin{array}{ll}
+   (e^x-1)(2e^x+1) &amp; \\
+    = 2e^{2x}+e^x-2e^x-1 &amp; \\
+    = 2e^{2ex}-e^x-1 &amp; \\
+    = f\prime(x)
+   \end{array}
+\]</span></p>
+<p><span class="math inline">\(\forall x \in \rm I\!R, 2e^x+1 &gt; 0\)</span> donc <span class="math inline">\(f\prime(x)\)</span> est du signe de <span class="math inline">\(e^x-1\)</span></p>
+<p>On résout:</p>
+<p><span class="math display">\[
+   \begin{array}{lcl}
+   e^x-1 &amp;\geq &amp;0\\
+   e^x &amp;\geq &amp; 1 \\
+   e^x &amp;\geq &amp;e⁰ \\
+   x &amp;\geq &amp;0
+   \end{array}
+\]</span></p>
+<p>// Todo: dresser le tableau.</p>
+</section>

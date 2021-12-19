@@ -1,0 +1,65 @@
+<h1 id="exemple-12---type-bac">Exemple 12 - Type BAC</h1>
+<p><span class="math inline">\(f(x) = \frac{e^x}{x+1}\)</span> sur <span class="math inline">\(]-1;+\infty[\)</span></p>
+<ol type="1">
+<li>Etudier la limite de <span class="math inline">\(f\)</span> en <span class="math inline">\(-1\)</span>.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to -1^+ } e^x = e^{-1} \\
+    \lim\limits_{x \to -1^+ } x+1 = 0⁺ \\
+\end{rcases} \text{par quotient} \lim\limits_{x \to -1⁺} f(x) = +\infty
+\]</span></p>
+</section>
+<ol start="2" type="1">
+<li>Interpréter ce résultat.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\text{alors la droite d&#39;équation } x=-1 \text{ est une asymptote verticale à Cf.}
+\]</span></p>
+</section>
+<ol start="3" type="1">
+<li>Etudier la limite de <span class="math inline">\(f\)</span> en <span class="math inline">\(+\infty\)</span>.</li>
+</ol>
+<section class="hidden">
+<p>On est en présence d’une forme indéterminée, de la forme: “<span class="math inline">\(\frac{\infty}{\infty}\)</span>”.</p>
+<p><span class="math display">\[
+   \begin{array}{rl}
+   \large f(x) &amp;= \frac{\large e^x}{ \large x+1} \\
+        &amp;= \frac{\large x(\frac{\large e^x}{\large x})}{\large x(1+\frac{\large 1}{\large x})} \\
+        &amp;= \frac{\frac{\large e^x}{\large x}}{\large 1+\frac{\large 1}{\large x}} \\
+   \end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to +\infty } \frac{e^x}{x} = +\infty \text{ (C.C)} \\
+    \lim\limits_{x \to +\infty } 1+\frac{1}{x} = 1 \\
+\end{rcases} \text{par quotient} \lim\limits_{x \to +\infty} f(x) = +\infty
+\]</span></p>
+</section>
+<ol start="4" type="1">
+<li><p>Donner le tableau de variation de <span class="math inline">\(f\)</span>.</p>
+<section class="hidden">
+<p><span class="math inline">\(f\)</span> est dérivable sur <span class="math inline">\(]-1;+\infty[\)</span></p>
+<p><span class="math inline">\(f\)</span> est de la forme <span class="math inline">\(\frac{u(x)}{v(x)}\)</span></p>
+<p><span class="math display">\[
+\begin{array}{ l c l }
+&amp; \text{avec} &amp; \\
+u(x) = e^x &amp; \text{ et } &amp; v(x) = x+1 \\
+u\prime(x) = e^x &amp;  &amp; v\prime(x) = 1 \\
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{array}{ll}
+f\prime(x) &amp;= \frac{\large u\prime(x) \times v(x) - v\prime(x) \times u(x)}{\large v^2(x)} \\
+           &amp;= \frac{\large e^x(x+1) -1e^x}{\large (x+1)²} \\
+           &amp;= \frac{\large e^x(x+1-1)}{\large (x+1)²} \\
+           &amp;= \frac{\large e^x(x)}{\large (x+1)²}
+\end{array}
+\]</span></p>
+<p><span class="math inline">\(\forall x \in ]-1;+\infty[\)</span>, <span class="math inline">\((x+1)² &gt; 0\)</span>, <span class="math inline">\(e^x &gt; 0\)</span>.</p>
+<p>On résout <span class="math inline">\(x \geq 0\)</span></p>
+<p>// TODO: dresser le tableau</p>
+</section></li>
+</ol>

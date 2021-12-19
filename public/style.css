@@ -92,6 +92,15 @@ main {
 /* Section / Content */
 /* ---------------- */
 
+/*Désolé pour le désordre:*/
+
+.to-know {
+  margin: 1em 0 1em 0;
+  background-color: red;
+  border-radius: 1em;
+  padding: 1em;
+}
+
 .math {
   line-height: 3;
 }
@@ -138,6 +147,18 @@ h2 {
 /* ------- */
 /* Navbar */
 /* -------*/
+
+/*Désolé pour le désordre:*/
+#examples-wrapper {
+  display: flex;
+  gap: 0.5em;
+}
+
+.type-bac {
+  background-color: red;
+  padding: 0 1em 0 1em;
+  border-radius: 1em;
+}
 
 .sidebar {
   position: fixed;
