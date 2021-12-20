@@ -1,0 +1,12 @@
+\documentclass[tikz, border=1mm]{standalone}
+\usepackage{tikz, tkz-tab}
+\usetikzlibrary{decorations, decorations.text,backgrounds}
+\begin{document}
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle]
+\newcommand*{ \E}{ \ensuremath{ \mathrm{e}}}.
+\tkzTabInit{$x$ /1,$g(x)$ /1}
+{$0$,$\alpha$,$+\infty$}
+\tkzTabLine{,+,z,-}
+\end{tikzpicture}
+\end{document}
+

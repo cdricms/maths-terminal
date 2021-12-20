@@ -43,13 +43,9 @@ $g(x) = x + 2 - e^x \text{sur} [0; +\infty[$
    \end{array}
    $$
 
-   $$
-   \begin{darray}{ |c| c c| }
-   \hline
-   x & \alpha & +\infty \\ \hline
-   g\prime(x) & \biggr\rvert & - \\ \hline
-    \end{darray}
-   $$
+   <center>
+   ![Tableau de variations de g](../data/maths/Chapter_7/exemple_17_A2.svg)
+   </center>
 
    </section>
 
@@ -73,6 +69,11 @@ $g(x) = x + 2 - e^x \text{sur} [0; +\infty[$
 
 5. Donner le tableau de signes de la fonction $f$.
    <section class="hidden">
+
+   <center>
+   ![Tableau de signes de g](../data/maths/Chapter_7/exemple_17_A5.svg)
+   </center>
+
    </section>
 
 ## Partie B
@@ -153,5 +154,9 @@ $f(x) = \frac{e^x - 1}{xe^x+1}$ sur $[0; +\infty[$.
 4. Tableau de variations de $f$. $\forall x \in [0;+\infty[$, $e^x > 0$ et $(xe^x + 1)² > 0$ donc $f\prime(x)$ est du signe de $g(x)$.
 
    <section class="hidden">
+
+   <center>
+   ![Tableau de variations de f](../data/maths/Chapter_7/exemple_17_B4.svg)
+   </center>
 
    </section>

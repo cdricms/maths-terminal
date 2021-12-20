@@ -65,6 +65,8 @@ $$
    \end{array}
 $$
 
-// TODO: Faire le tableau de variations.
+<center>
+![Tableau de variations de f](../data/maths/Chapter_7/exemple_11_3.svg)
+</center>
 
 </section>

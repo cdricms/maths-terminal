@@ -6,6 +6,8 @@ $f(x) = e^{2x}-e^x-x$ sur $\rm I\!R$
 
 <section class="hidden">
 
+En $-\infty$:
+
 $$
 \begin{rcases}
     \lim\limits_{x \to -\infty} e^{2x} = 0 \\
@@ -77,6 +79,8 @@ $$
    \end{array}
 $$
 
-// Todo: dresser le tableau.
+<center>
+![Tableau de variations de f](../data/maths/Chapter_7/exemple_13_3.svg)
+</center>
 
 </section>

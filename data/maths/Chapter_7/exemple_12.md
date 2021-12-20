@@ -76,6 +76,8 @@ $$
 
    On résout $x \geq 0$
 
-   // TODO: dresser le tableau
+   <center>
+   ![Tableau de variations de f](../data/maths/Chapter_7/exemple_12_4.svg)
+   </center>
 
    </section>
