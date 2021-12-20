@@ -41,19 +41,19 @@ $$
 \begin{array}{ l c l }
 & \text{avec} & \\
 u(x) = x & \text{ et } & v(x) = e^{-x} \\
-u\prime(x) = 1 &  & v\prime(x) = -e^{-x} \\
+u'(x) = 1 &  & v'(x) = -e^{-x} \\
 \end{array}
 $$
 
 $$
 \begin{array}{ll}
-f\prime(x) &= \large u\prime(x) \times v(x) + v\prime(x) \times u(x) \\
+f'(x) &= \large u'(x) \times v(x) + v'(x) \times u(x) \\
             &= \large 1e^{-x} -e^{-x} \times x \\
             &= \large e^{-x}(1-x)
 \end{array}
 $$
 
-$\forall x \in \rm I\!R$, $e^{-x} > 0$, donc $f\prime(x)$ est du signe de $1-x$.
+$\forall x \in \rm I\!R$, $e^{-x} > 0$, donc $f'(x)$ est du signe de $1-x$.
 
 On résout: $1-x \geq 0$
 

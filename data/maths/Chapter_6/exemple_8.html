@@ -1,0 +1,85 @@
+<h1 id="exemple-8---type-bac-probabilités-et-suites">Exemple 8 - Type BAC (Probabilités et suites)</h1>
+<p>Dans un zoo, l’unique activité d’un manchot est l’utilisation, dans un bain aquatique, d’un toboggan et d’un plongeoire.</p>
+<p>On a observé que si un manchot choisit le toboggan, la probabilité qu’il le reprenne est 0,3. Si un manchot choisit le plongeoire, alors la probabilité qu’il le reprenne est de 0,8. Lors du premier passage, les deux équipements ont la même probabilité d’être choisi, <span class="math inline">\(\forall n \in I\!N^*\)</span>, on note:</p>
+<p><span class="math inline">\(T_n\)</span>: “Le manchot choisit le toboggan au nième passage”</p>
+<p><span class="math inline">\(P_n\)</span>: “Le manchot choisit le plongeoire au nième passage”</p>
+<p>On note <span class="math inline">\(u_n = P(T_n)\)</span></p>
+<ol type="1">
+<li>A l’aide d’un arbre de probabilité, prouver que <span class="math inline">\(P(T_2)={1 \over 4}\)</span></li>
+</ol>
+<section class="hidden">
+<center>
+<img src="../data/maths/Chapter_6/exemple_8_1.svg" title="fig:" alt="Arbre pondéré" />
+</center>
+<p><span class="math inline">\(P_1\)</span> et <span class="math inline">\(T_1\)</span> forment une partition de l’univers.</p>
+<p>D’après la formule des probabilités totales:</p>
+<p><span class="math display">\[
+\begin{array}{ll}
+    P(T_2) &amp;= P(P_1 \cap T_2) + P(T_1 \cap T_2) \\
+        &amp;= P(P_1) \times P_{P_1}(T_2) + P(T_1) \times P_{T_1}(T_2) \\
+        &amp;= {1 \over 2} \times 0,2 + {1 \over 2} \times 0,3 \\
+        &amp;= 0,25 = {1 \over 4}
+\end{array}
+\]</span></p>
+</section>
+<ol start="2" type="1">
+<li><p>A l’aide d’un arbre de probabilité, démontrer que <span class="math inline">\(u_{n+1}=0,1u_n+0,2\)</span>.</p>
+<section class="hidden">
+<center>
+<figure>
+<img src="../data/maths/Chapter_6/exemple_8_2.svg" alt="Arbre pondéré" /><figcaption aria-hidden="true">Arbre pondéré</figcaption>
+</figure>
+</center>
+<p><span class="math inline">\(P_n\)</span> et <span class="math inline">\(T_n\)</span> forment une partition de l’univers.</p>
+<p>D’après la formule des probabilités totales:</p>
+<p><span class="math display">\[
+\begin{array}{rl}
+    u_{n+1} &amp;= P(P_n \cap T_{n+1}) + P(T_n \cap T_{n+1}) \\
+        &amp;= P(P_n) \times P_{P_n}(T_{n+1}) + P(T_n) \times P_{T_n}(T_{n+1}) \\
+        &amp;= (1-u_n) \times 0,2 + u_n \times 0,3 \\
+        &amp;= 1-0,2u_n + 0,3u_n \\
+        &amp;= 0,1u_n+0,2
+\end{array}
+\]</span></p>
+</section></li>
+<li><p>On pose: <span class="math inline">\(v_n = u_n-{2 \over 9}\)</span></p>
+<ol type="a">
+<li>Démontrer que <span class="math inline">\(v_n\)</span> est une suite géométrique.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{array}{rl}
+   v_{n+1} &amp;= 0,1(v_n + {2 \over 9}) + 0,2 - {2 \over 9} \\
+           &amp;= 0,1v_n+{1 \over 45} - {1 \over 45} \\
+           &amp;= 0,1v_n
+\end{array}
+\]</span></p>
+<p>Donc <span class="math inline">\(v_n\)</span> est une suite géométrique de raison <span class="math inline">\(q=0,1\)</span> et de premier terme <span class="math inline">\(\begin{array}{rl}  v_1 &amp;= u_1 - {2 \over 9} \\  &amp;= {1 \over 2} - {2 \over 9} = {5 \over 18}  \end{array}\)</span></p>
+</section>
+<ol start="2" type="a">
+<li>Exprimer <span class="math inline">\(u_n\)</span> en fonction de <span class="math inline">\(n\)</span>.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{array}{rl}
+    u_n &amp;= v_n + {2 \over 9} \\
+        &amp;= ({5 \over 18} \times 0,1^{n+1})+{2\over9}
+\end{array}
+\]</span></p>
+</section>
+<ol start="3" type="a">
+<li>Etudier la limite de <span class="math inline">\((u_n)\)</span>.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+u_n = {5 \over 18} \times 0,1^{n-1}+{2\over9}
+\]</span></p>
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{n \to +\infty } {2 \over 9} = {2 \over 9} \\
+    \lim\limits_{n \to +\infty } {5 \over 18} = {5 \over 18}  \\
+    \lim\limits_{n \to +\infty } 0,1^{n-1} = 0 \text{, car} -1 &lt; 0,1 &lt; 1 \\
+\end{rcases} \text{par règles opératoires} \lim\limits_{n \to +\infty} u_n = {2 \over 9}
+\]</span></p>
+</section></li>
+</ol>

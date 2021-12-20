@@ -39,19 +39,19 @@ $$
 
 </section>
 
-2. Calculer $f\prime(x)$.
+2. Calculer $f'(x)$.
 
    <section class="hidden">
 
    $f$ est de la forme : $e^{2x}-e^x-x$
 
    $$
-   f\prime(x) = 2e^{2x}-e^x-1
+   f'(x) = 2e^{2x}-e^x-1
    $$
 
    </section>
 
-3. Après avoir vérifier que $f\prime(x) = (e^x-1)(2e^x+1)$, dresser le tableau de variations de $f$.
+3. Après avoir vérifier que $f'(x) = (e^x-1)(2e^x+1)$, dresser le tableau de variations de $f$.
 
 <section class="hidden">
 
@@ -62,11 +62,11 @@ $$
    (e^x-1)(2e^x+1) & \\
     = 2e^{2x}+e^x-2e^x-1 & \\
     = 2e^{2ex}-e^x-1 & \\
-    = f\prime(x)
+    = f'(x)
    \end{array}
 $$
 
-$\forall x \in \rm I\!R, 2e^x+1 > 0$ donc $f\prime(x)$ est du signe de $e^x-1$
+$\forall x \in \rm I\!R, 2e^x+1 > 0$ donc $f'(x)$ est du signe de $e^x-1$
 
 On résout:
 

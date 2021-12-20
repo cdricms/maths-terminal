@@ -59,13 +59,13 @@ $$
    \begin{array}{ l c l }
    & \text{avec} & \\
    u(x) = e^x & \text{ et } & v(x) = x+1 \\
-   u\prime(x) = e^x &  & v\prime(x) = 1 \\
+   u'(x) = e^x &  & v'(x) = 1 \\
    \end{array}
    $$
 
    $$
    \begin{array}{ll}
-   f\prime(x) &= \frac{\large u\prime(x) \times v(x) - v\prime(x) \times u(x)}{\large v^2(x)} \\
+   f'(x) &= \frac{\large u'(x) \times v(x) - v'(x) \times u(x)}{\large v^2(x)} \\
               &= \frac{\large e^x(x+1) -1e^x}{\large (x+1)²} \\
               &= \frac{\large e^x(x+1-1)}{\large (x+1)²} \\
               &= \frac{\large e^x(x)}{\large (x+1)²}

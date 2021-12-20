@@ -37,7 +37,7 @@
         <div class="sidebar-scrollbox">
             <?php
                 $sql = 
-                'SELECT * FROM chapters';
+                'SELECT * FROM chapters ORDER BY chapters_number ASC';
                 $datas = $db->query($sql);
                 $a = $datas->fetchAll();
 

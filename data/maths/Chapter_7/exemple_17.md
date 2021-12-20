@@ -29,7 +29,7 @@ $g(x) = x + 2 - e^x \text{sur} [0; +\infty[$
 
    $g$ est dérivable sur $[0; +\infty[$
 
-   $$g\prime(x) = 1 - e^x$$
+   $$g'(x) = 1 - e^x$$
 
    On résout: $1-e^x \geq 0$
 
@@ -100,7 +100,7 @@ $f(x) = \frac{e^x - 1}{xe^x+1}$ sur $[0; +\infty[$.
 
    </section>
 
-2. Calculer $f\prime(x)$.
+2. Calculer $f'(x)$.
    <section class="hidden">
 
    $f$ est dérivable sur $[0;+\infty[$
@@ -111,14 +111,14 @@ $f(x) = \frac{e^x - 1}{xe^x+1}$ sur $[0; +\infty[$.
    \begin{array}{ l c l }
    & \text{avec} & \\
    u(x) = e^x-1 & \text{ et } & v(x) = xe^x+1 \\
-   u\prime(x) = e^x &  & v\prime(x) = 1e^x+e^xx \\
+   u'(x) = e^x &  & v'(x) = 1e^x+e^xx \\
    & &= e^x(x+1)
    \end{array}
    $$
 
    $$
    \begin{array}{ll}
-   f\prime(x) &= \frac{\large u\prime(x) \times v(x) - v\prime(x) \times u(x)}{\large v^2(x)} \\
+   f'(x) &= \frac{\large u'(x) \times v(x) - v'(x) \times u(x)}{\large v^2(x)} \\
               &= \frac{\large e^x(xe^x+1) - e^x(x+1)(e^x-1)}{(\large xe^x+1)²} \\
               &= \frac{\large e^x(x-e^x+2)}{\large (xe^x+1)²} \\
               &= \frac{\large e^xg(x)}{\large (xe^x+1)²}
@@ -151,7 +151,7 @@ $f(x) = \frac{e^x - 1}{xe^x+1}$ sur $[0; +\infty[$.
 
    </section>
 
-4. Tableau de variations de $f$. $\forall x \in [0;+\infty[$, $e^x > 0$ et $(xe^x + 1)² > 0$ donc $f\prime(x)$ est du signe de $g(x)$.
+4. Tableau de variations de $f$. $\forall x \in [0;+\infty[$, $e^x > 0$ et $(xe^x + 1)² > 0$ donc $f'(x)$ est du signe de $g(x)$.
 
    <section class="hidden">
 
