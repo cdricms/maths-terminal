@@ -1,0 +1,102 @@
+<h1 id="exemple-6---type-bac-probabilité-et-suite">Exemple 6 - Type BAC (Probabilité et suite)</h1>
+<p>Dans un jeu une suite d’énigmes est proposée aux faveurs, elles sont classées en 2 catégories:</p>
+<p><span class="math inline">\(A\)</span>: facile et <span class="math inline">\(B\)</span>: difficile</p>
+<p>La première énigme est facile.</p>
+<p>Si une énigme est facile, alors la probabilité que la suivante soit difficile est égale à 0,15.</p>
+<p>Si une énigme est difficile, alors la probabilité que la suivante soit facile est égale à 0,1.</p>
+<p><span class="math inline">\(\forall n \geq 1\)</span>, on note:</p>
+<p><span class="math inline">\(A_n\)</span>: “l’énigme numéro n est facile et <span class="math inline">\(a_n\)</span> sa probabilité <span class="math inline">\(a_n=P(A_n)\)</span>.</p>
+<p><span class="math inline">\(B_n\)</span>: “l’énigme numéro n est difficile et <span class="math inline">\(b_n\)</span> sa probabilité <span class="math inline">\(b_n=P(B_n)\)</span>.</p>
+<ol type="1">
+<li>Donner <span class="math inline">\(a_1\)</span> et <span class="math inline">\(b_1\)</span>.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+a_1 = P(A_1) = 1 \\
+b_1 = P(B_1) = 0
+\]</span></p>
+</section>
+<ol start="2" type="1">
+<li>Compléter l’arbre pondéré</li>
+</ol>
+<section class="hidden">
+<p>// TODO: Arbre</p>
+</section>
+<ol start="3" type="1">
+<li><p>Prouver que <span class="math inline">\(a_2=0,85\)</span>.</p>
+<section class="hidden">
+<p><span class="math inline">\(A_1\)</span> et <span class="math inline">\(B_1\)</span> forment une parititon de l’univers.</p>
+<p>D’après la formule des probabilités totales:</p>
+<p><span class="math display">\[
+\begin{array}{rcl}
+    a_2 &amp;= P(A_2) &amp;= P(A_1 \cap A_2) + P(B_1 \cap A_2) \\
+        &amp;         &amp;= P(A_1) \times P_{A_1}(A_2) + P(B_1) \times P_{B_1}(A_2) \\
+        &amp;         &amp;= 1 \times 0,85 + 0 \times 0,1 \\
+        &amp;         &amp;= 0,85
+\end{array}
+\]</span></p>
+</section></li>
+<li><p>Compléter l’arbre pondéré puis prouver que <span class="math inline">\(\forall n \in I\!N^*\)</span>, <span class="math inline">\(a_{n+1}=0,75a_n+0,1\)</span>.</p>
+<section class="hidden">
+<p>// TODO: Arbre</p>
+<p><span class="math inline">\(a_{n+1}=P(A_{n+1})\)</span></p>
+<p><span class="math inline">\(A_n\)</span> et <span class="math inline">\(B_n\)</span> forment une partition de l’univers.</p>
+<p>D’après la formule des probabilités totales.</p>
+<p><span class="math display">\[
+\begin{array}{rcl}
+    a_{n+1} &amp;= P(A_{n+1}) &amp;= P(A_n \cap A_{n+1}) + P(B_n \cap A_{n+1}) \\
+        &amp;         &amp;= P(A_n) \times P_{A_n}(A_{n+1}) + P(B_n) \times P_{B_n}(A_{n+1}) \\
+        &amp;         &amp;= a_n \times 0,85 + b_n \times 0,1 \\
+        &amp;         &amp;= 0,85a_n + 0,1(1-a_n) \\
+        &amp;         &amp;= 0,85a_n + 0,1 - 0,1a_n \\
+        &amp;         &amp;= 0,75a_n + 0,1
+\end{array}
+\]</span></p>
+</section></li>
+<li><p><span class="math inline">\(\forall n \in I\!N^*\)</span>, on a <span class="math inline">\(p\)</span>: <span class="math inline">\(v_n=a_n-0,4\)</span>.</p>
+<ol type="a">
+<li>Démontrer que <span class="math inline">\((v_n)\)</span> est une suite géométrique.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{array}{rl}
+    v_{n+1} &amp;= a_{n+1} - 0,4 \\
+            &amp;= 0,75a_n +0,1 - 0,4 \\
+    \text{or } a_n  &amp;= v_n + 0,4 \\
+    v_{n+1} &amp;= 0,75(v_n+0,4) +0,1 -0,4 \\
+            &amp;= 0,75v_n +0,3 -0,3 \\
+            &amp;= 0,75v_n
+\end{array}
+\]</span></p>
+<p>Donc <span class="math inline">\((v_n)\)</span> est une suite de raison <span class="math inline">\(q=0,75\)</span> et de premier terme <span class="math inline">\(v_n=1-0,4=0,6\)</span>.</p>
+</section></li>
+</ol>
+<ol start="2" type="a">
+<li>Démontrer que <span class="math inline">\(\forall n \in I\!N^*\)</span>, <span class="math inline">\(a_n=0,8 \times 0,75^n + 0,4\)</span>.</li>
+</ol>
+<section class="hidden">
+<p>Vérifions que la propriété est vraie au rang initial.</p>
+<p><span class="math display">\[
+\begin{array}{rl}
+    a_1 &amp;= 0,8 \times 0,75¹ + 0,4
+        &amp;= 1
+\end{array}
+\]</span></p>
+<p>donc <span class="math inline">\(a_1 = 0,8 \times 0,75¹ + 0,4\)</span></p>
+<p>Supposons que pour un rang <span class="math inline">\(n\)</span> de <span class="math inline">\(I\!N^*\)</span>, <span class="math inline">\(a_n=0,8 \times 0,75^n +0,4\)</span>.</p>
+<p>Démontrons que <span class="math inline">\(\forall n \in I\!N^*\)</span> <span class="math inline">\(a_{n+1}=0,8 \times 0,75^{n+1}+0,4\)</span>.</p>
+<p>// JE SAIS PLUS CE QUE JAI FOUTU</p>
+</section>
+<ol start="3" type="a">
+<li>En déduire la limite de la suite <span class="math inline">\((a_n)\)</span> et interpréter le résultat.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{rcases}
+    \lim\limits_{x \to +\infty } 0,8 = 0,8 \\
+    \lim\limits_{x \to +\infty } 0,75^n = 0 \text{ car -1 &lt; 0,75 &lt;section 1} \\
+    \lim\limits_{x \to +\infty } 0,4 = 0,4 \\
+\end{rcases} \text{par règles opératoires: } \lim\limits_{x \to +\infty} u_n = 0,4
+\]</span></p>
+<p>A long terme, la probabilité d’avoir une énigme facile se rapproche de <span class="math inline">\(0,4\)</span>.</p>
+</section>
