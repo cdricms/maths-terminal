@@ -1,0 +1,45 @@
+<h1 id="exemple-12---type-bac">Exemple 12 - Type BAC</h1>
+<p>Une société de vente de matériel de jardinage propose à ses clients des lots de 80 tondeuses. Une étude a montré que 95% des tondeuses vendus sont sans défaut. On note <span class="math inline">\(X\)</span> la variable aléatoire qui compte le nombre de tondeuses sans défaut.</p>
+<ol type="a">
+<li>Justifier que <span class="math inline">\(X\)</span> suit une loi binomiale.</li>
+</ol>
+<section class="hidden">
+<p>On répète 80 fois de manières identiques et indépendantes la même épreuve de Bernoulli de paramètre 0,95.</p>
+<p>La variable aléatoire <span class="math inline">\(X\)</span> suit une loi binomiale de paramètres <span class="math inline">\(n=80\)</span> et <span class="math inline">\(p=0,95\)</span>.</p>
+</section>
+<ol start="2" type="a">
+<li>Calculer à <span class="math inline">\(0,01\)</span> près la probabilité qu’il y ait 75 tondeuses sans défaut.</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{array}{rl}
+    P(X=75) &amp;= \binom{80}{75} \times 0,95^{75} \times (1-0,75)⁵ \\
+            &amp;\approx 0,16 \text{ à l&#39;aide de la calculatrice.}
+\end{array}
+\]</span></p>
+</section>
+<ol start="3" type="a">
+<li>Déterminer le plus petit entier <span class="math inline">\(k\)</span> tel que <span class="math inline">\(P(X \leq k) \geq 0,65\)</span>.</li>
+</ol>
+<section class="hidden">
+<center>
+<p>A la calculatrice,</p>
+<p><span class="math inline">\(P(X \leq 76) \approx 0,57\)</span></p>
+<p><span class="math inline">\(P(X \leq 77) \approx 0,77\)</span></p>
+<p>donc k = 77</p>
+</center>
+</section>
+<ol start="4" type="a">
+<li>On souhaite déterminer le plus petit entier <span class="math inline">\(k\)</span> tel que la probabilité. <span class="math inline">\(P(X \leq k) \geq S\)</span> avec <span class="math inline">\(S \in ]0; 1[\)</span></li>
+</ol>
+<p>Compléter l’algorithme.</p>
+<pre><code>Tant que ...:
+    k &lt;- ...
+    P &lt;- ...
+Fin Tant que</code></pre>
+<section class="hidden">
+<pre><code>Tant que P &lt; S:
+    k &lt;- k+1
+    P &lt;- P + combinaison(80, k) * 0.95 * k * 0.05 ** (80 - k)
+Fin Tant que</code></pre>
+</section>
