@@ -46,5 +46,7 @@ allBoxes.forEach((box) => {
     sidebar.style.display = e.target.classList.contains("active")
       ? "flex"
       : "none";
+    
+    sidebar.classList.toggle("active")
   };
 });

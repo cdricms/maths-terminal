@@ -105,6 +105,7 @@ main {
   color: red;
   border-radius: 1em;
   padding: 1em;
+  transition: var(--transition-delay);
 }
 
 .math {
@@ -184,7 +185,6 @@ h2 {
   overscroll-behavior-y: contain;
   background-color: var(--accent-color);
   color: var(--text-color);
-  transition: var(--transition-delay);
 }
 
 .sidebar .sidebar-scrollbox {
@@ -245,7 +245,7 @@ summary {
 }
 
 #issues p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #container-error {
@@ -281,10 +281,6 @@ summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .theme-toggle-button {
-    margin: 0 20px 0 0;
   }
 
   .box {
@@ -367,5 +363,114 @@ summary {
     transition: 
     top 0.4s ease-in-out,
     transform 0.4s 0.4s ease-in-out;
+  }
+
+  /* Menu active/visible */
+
+  .theme-toggle-button p {
+    display: none;
+  }
+
+  .theme-toggle-button {
+    margin: 0 20px 0 0;
+  }
+
+  .theme-toggle-button .icon {
+    margin-right: 0;
+  }
+
+  .sidebar.active {
+    width: 200px;
+    overflow-wrap: break-word;
+    animation-duration: 1s;
+    animation-name: slide;
+  }
+
+  @keyframes slide {
+    from {
+      margin-right: 100%;
+      width: 0;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  .box.active {
+    margin-left: 201px;
+  }
+
+  /* Part: Error */
+
+  #container-error {
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #container-error:nth-child(2) {
+    display: none;
+  }
+
+  #img:nth-child(1) {
+    padding-right: 10px;
+  }
+
+  #img:nth-child(2) {
+    padding-left : 10px;
+  }
+
+  #container-error h1 {
+    font-size: 16px;
+    width: 190px;
+    overflow-wrap: break-word;
+  }
+
+  #container-error p {
+    width: 150px;
+    height: 100px;
+    font-size: 14px;
+    overflow-wrap: break-word;
+  }
+
+  #issues {
+    margin: 0;
+  }
+
+  img.avatars {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Section / Content */
+  
+  #content {
+    max-width: 250px;
+  }
+
+  /* .wrapper-hidden {
+    overflow-wrap: break-word;
+    max-width: 250px;
+    max-height: 600px;
+  } */
+
+  .hidden {
+    inline-size: 250px; 
+    overflow: scroll;
+  }
+
+  h1 {
+    line-height: 2.2;
+    font-weight: 200;
+    font-family: "Poppins", serif;
+  }
+  
+  h2 {
+    padding-top: 10px;
+    line-height: 1.5;
+    font-weight: 200;
+    font-family: 'Merriweather', serif;
   }
 }
