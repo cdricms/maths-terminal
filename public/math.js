@@ -1,9 +1,8 @@
 // Swapper part
 
-document.querySelector('.theme-toggle-button').addEventListener('click', () => {
-  document.body.classList.toggle('light')
-})
-
+document.querySelector(".theme-toggle-button").addEventListener("click", () => {
+  document.body.classList.toggle("light");
+});
 
 // Wrapper part
 
@@ -36,17 +35,16 @@ for (let x = 0; x < hiddenItems.length; x++) {
 
 console.log(hiddenItems);
 
-
 // Responsive & humburger
 
 const allBoxes = document.querySelectorAll(".box");
+const sidebar = document.getElementById("sidebar");
 
-allBoxes.forEach(box => {
-
-    box.addEventListener("click", e => {
-        e.target.classList.toggle("active");
-
-    })
-    
-})
-
+allBoxes.forEach((box) => {
+  box.onclick = (e) => {
+    e.target.classList.toggle("active");
+    sidebar.style.display = e.target.classList.contains("active")
+      ? "flex"
+      : "none";
+  };
+});

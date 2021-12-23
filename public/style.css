@@ -288,6 +288,7 @@ summary {
 
   .box {
     display: block;
+    z-index: 30;
     height: 30px;
     width: 30px;
     margin: 30px 30px;
