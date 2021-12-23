@@ -35,3 +35,18 @@ for (let x = 0; x < hiddenItems.length; x++) {
 }
 
 console.log(hiddenItems);
+
+
+// Responsive & humburger
+
+const allBoxes = document.querySelectorAll(".box");
+
+allBoxes.forEach(box => {
+
+    box.addEventListener("click", e => {
+        e.target.classList.toggle("active");
+
+    })
+    
+})
+

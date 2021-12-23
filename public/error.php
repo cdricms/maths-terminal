@@ -28,7 +28,7 @@
             <p> Si tu veux continuer l'expérience sur notre site, essaie plutôt de naviguer graĉe aux différents choix qui se trouvent sur ta gauche !
         </div>
         <div id="img">
-            <img src='https://avataaars.io/?avatarStyle=Circle&topType=WinterHat1&accessoriesType=Blank&hatColor=Gray02&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light'/>
+        <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light'/>
         </div>
     </div>
 </body>
