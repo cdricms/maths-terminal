@@ -1,9 +1,3 @@
-// Swapper part
-
-document.querySelector(".theme-toggle-button").addEventListener("click", () => {
-  document.body.classList.toggle("light");
-});
-
 // Wrapper part
 
 const hiddenItems = document.getElementsByClassName("hidden");
