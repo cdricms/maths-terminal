@@ -105,22 +105,39 @@
     <!-- End/sidebar -->
     <section id="content">
         <?php
-            $t = $_GET['t'];
-            list($chapter_id, $examples_number) = explode("-", $t);
 
-            if (empty($chapter_id) or empty($examples_number)) include("./error.php");
+            // Check if the arguement t is set in the url
+            // if not send error.html
+            if (isset($_GET['t'])) {
 
-            $sql = "SELECT * FROM chapters JOIN examples ON chapters_id=examples_chapter_id WHERE examples_number=$examples_number AND chapters_id=$chapter_id";
+                $t = $_GET['t'];
+                // Destructure the value of t
+                list($chapter_id, $examples_number) = explode("-", $t);
+                
+                // if they are empty send error.html 
+                if (!(empty($chapter_id) or empty($examples_number))) {
+                    // Query the correct example based on the example number and its chapter
+                    $sql = "SELECT * FROM chapters JOIN examples ON chapters_id=examples_chapter_id WHERE examples_number=$examples_number AND chapters_id=$chapter_id";
+                    
+                    $datas = $db->query($sql);
+                    $row = $datas->fetch();
+                    
+                    // Get the path of the html corresponding to the example
+                    
+                    // If the example exists, include its html
+                    // else include the error page.
+                    if (!empty($row)) {
+                        $path = $row["examples_path"];
+                        include($path);
+                    } else {
+                        include("./error.html");
+                    }
+                    
+                } else include "./error.html" ;
+            } else include "./error.html";
 
-            $datas = $db->query($sql);
-            $row = $datas->fetch();
-
-            $path = $row["examples_path"];
-
-            if (!empty($row)) {
-                include($path);
-            } else include("./error.php");
         ?>
+
     </section>
     <!-- End/content -->
     </main>
