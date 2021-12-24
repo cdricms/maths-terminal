@@ -656,7 +656,7 @@ summary {
   } */
 
   .hidden {
-    inline-size: 250px; 
+    /* inline-size: 250px;  */
     overflow: scroll;
   }
 
