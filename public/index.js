@@ -46,7 +46,18 @@ allBoxes.forEach((box) => {
     sidebar.style.display = e.target.classList.contains("active")
       ? "flex"
       : "none";
-    
-    sidebar.classList.toggle("active")
+
+    sidebar.classList.toggle("active");
   };
 });
+
+window.onresize = (e) => {
+  const w = window.matchMedia("(max-width: 640px)");
+  if (!w.matches) {
+    sidebar.classList.add("active");
+    sidebar.style.display = "flex";
+  } else {
+    sidebar.classList.remove("active");
+    sidebar.style.display = "none";
+  }
+};

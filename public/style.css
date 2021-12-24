@@ -185,6 +185,8 @@ h2 {
   overscroll-behavior-y: contain;
   background-color: var(--accent-color);
   color: var(--text-color);
+
+  display: flex;
 }
 
 .sidebar .sidebar-scrollbox {
@@ -388,12 +390,11 @@ summary {
 
   @keyframes slide {
     from {
-      margin-right: 100%;
-      width: 0;
+      transform: translateX(-100%);
     }
   
     to {
-      margin-left: 0%;
+      transform: translateX(0%); 
     }
   }
 
