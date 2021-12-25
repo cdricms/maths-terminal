@@ -35,8 +35,19 @@
                     <script>
                         // The script is here, so it loads quicker. 
                         // On load, gets the theme if there's one.
-                        const theme = localStorage.getItem("theme");
+                        let theme = localStorage.getItem("theme");
                         const themeToggleBtn = document.querySelector(".theme-toggle-button");
+                        
+                        window.matchMedia('(prefers-color-scheme: light)').onchange = (e) => {
+                            localStorage.setItem("theme", e.matches ? "light" : "dark")
+                            if (e.matches) document.body.classList.add("light")
+                            else if (document.body.classList.contains("light")) document.body.classList.remove("light")
+                        }
+
+                        if (!theme && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                            theme = "light"
+                            localStorage.setItem("theme", "light");
+                        }
 
                         // If the value is light, change the theme to light
                         if (theme === "light") {
