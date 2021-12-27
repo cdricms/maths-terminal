@@ -1049,3 +1049,20 @@ summary {
     font-family: 'Merriweather', serif;
   }
 }
+
+.copyright {
+  color: var(--text-color);
+  transition: var(--transition-delay);
+  opacity: 0.7;
+  text-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon-copyright {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  transition: var(--transition-delay);
+}
