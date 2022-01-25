@@ -105,7 +105,6 @@
                             // End of li for numbers and examples
                                     
                     }
-
                     echo "</details>";
                 }
                 echo '<div class="copyright">
