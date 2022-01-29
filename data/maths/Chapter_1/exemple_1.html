@@ -1,0 +1,23 @@
+<h1 id="exemple-1---type-ds">Exemple 1 - Type DS</h1>
+<p><span class="math inline">\(U_n\)</span> est définie sur <span class="math inline">\(I\!N\)</span></p>
+<p><span class="math inline">\(u_0 = 0\)</span></p>
+<p><span class="math inline">\(u_{n+1} = 2u_n + 1\)</span></p>
+<ol type="1">
+<li>Démonter par réccurence que pour tout n de <span class="math inline">\(I\!N\)</span>, <span class="math inline">\(u_n = 2^n -1\)</span></li>
+</ol>
+<section class="hidden">
+<p>Vérifions que la propriété est vraie au rang initial.</p>
+<p><span class="math inline">\(u_0 = 0 \enspace\)</span> et <span class="math inline">\(\enspace 2^0 - 1 = 1 - 1 = 0\)</span></p>
+<p>donc : <span class="math inline">\(u_0 = 2^0 - 1\)</span></p>
+<p>Supposons que pour un rang n de <span class="math inline">\(I\!N\)</span>, <span class="math inline">\(u_n = 2^n - 1\)</span>, démontrons alors que : <span class="math inline">\(u_{n+1} =2^{n+1} - 1\)</span></p>
+<p>On a : <span class="math display">\[
+   \begin{array}{ll}
+    u_{n+1} &amp;= 2u_n+1 \\
+         &amp;= 2(2^n-1)+1 \\
+         &amp;= 2\times2^n-2\times1+1 \\
+         &amp;= 2^{n+1}-2+1 \\
+         &amp;= 2^{n+1}-1
+   \end{array}
+\]</span></p>
+<p>Conclusion on a démontré par réccurence que <span class="math inline">\(\forall n\in \rm I\!N,\)</span> <span class="math inline">\(u_n=2^n-1\)</span></p>
+</section>
