@@ -91,14 +91,18 @@
 
                     while ($row=$datas->fetch()) {
 
-                        $type_bac = $row['examples_is_bac'] == 1 ? '<span class="type-bac">BAC</span>' : "";
+                        $type = '<span class="type-bac">';
+                        $end = '</span>';
+
+                        $type_bac = $row['examples_is_bac'] == 1 ? $type . 'BAC' . $end : "";
+                        $type_ds = $row['examples_is_ds'] == 1 ? $type . 'DS' . $end : "";
                         $href = '?t=' . $ch['chapters_id'] . '-' . $row['examples_number'];
                         echo '<ol class="chapters">
                                 <li class="chapters-examples">
                                     <a id="examples" href="' . $href . '"> 
                                     <div id="examples-wrapper">
                                         <strong id="bold">' . $ch['chapters_number'] . '.' . $row['examples_number'] . '.</strong>
-                                        Exemple ' . $row['examples_number'] . $type_bac . '
+                                        Exemple ' . $row['examples_number'] . $type_bac . $type_ds . '
                                     </div></a>
                                 </li>
                             </ol>';
