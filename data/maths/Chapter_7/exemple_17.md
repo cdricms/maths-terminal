@@ -67,7 +67,7 @@ $g(x) = x + 2 - e^x \text{sur} [0; +\infty[$
 
    </section>
 
-5. Donner le tableau de signes de la fonction $f$.
+5. Donner le tableau de signes de la fonction $g$.
    <section class="hidden">
 
    <center>
@@ -133,8 +133,8 @@ $f(x) = \frac{e^x - 1}{xe^x+1}$ sur $[0; +\infty[$.
 
    $$
    \begin{array}{ll}
-   f(\alpha) &= \frac{e^x-1}{\alpha e^x+1} \\\\
-   \text{or } g(x) &= 0 \\
+   f(\alpha) &= \frac{e^\alpha-1}{\alpha e^\alpha+1} \\\\
+   \text{or } g(\alpha) &= 0 \\
    \alpha + 2 - e^\alpha &= 0 \\
    e^\alpha &= \alpha + 2
    \end{array}

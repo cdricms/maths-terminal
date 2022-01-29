@@ -130,7 +130,7 @@ c) En déduire la limite de la suite $(a_n)$ et interpréter le résultat.
 $$
 \begin{rcases}
     \lim\limits_{x \to +\infty } 0,8 = 0,8 \\
-    \lim\limits_{x \to +\infty } 0,75^n = 0 \text{ car -1 < 0,75 <section 1} \\
+    \lim\limits_{x \to +\infty } 0,75^n = 0 \text{ car -1 < 0,75 < 1} \\
     \lim\limits_{x \to +\infty } 0,4 = 0,4 \\
 \end{rcases} \text{par règles opératoires: } \lim\limits_{x \to +\infty} u_n = 0,4
 $$
