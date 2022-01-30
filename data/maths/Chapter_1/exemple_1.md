@@ -1,13 +1,13 @@
 # Exemple 1 - Type DS
 
-$U_n$ est définie sur $I\!N$
+$u_n$ est définie sur $I\!N$.
 
 
 $u_0 = 0$ 
 
 $u_{n+1} = 2u_n + 1$
 
-1. Démonter par réccurence que pour tout n de $I\!N$, $u_n = 2^n -1$
+1. Démonter par réccurence que pour tout n de $I\!N$, $u_n = 2^n -1$.
 
 <section class="hidden">
 
@@ -17,7 +17,7 @@ $u_0 = 0 \enspace$ et $\enspace 2^0 - 1 = 1 - 1 = 0$
 
 donc : $u_0 = 2^0 - 1$
 
-Supposons que pour un rang n de $I\!N$, $u_n = 2^n - 1$, démontrons alors que : $u_{n+1} =2^{n+1} - 1$
+Supposons que pour un rang n de $I\!N$, $u_n = 2^n - 1$, démontrons alors que : $u_{n+1} =2^{n+1} - 1$.
 
 On a :
 $$
@@ -30,6 +30,6 @@ $$
    \end{array}
 $$
 
-Conclusion on a démontré par réccurence que $\forall n\in \rm I\!N,$ $u_n=2^n-1$
+Conclusion on a démontré par réccurence que $\forall n\in \rm I\!N,$ $u_n=2^n-1$.
 
 </section>

@@ -1,10 +1,10 @@
 # Exemple 2 - Type DS
 
-$U_n=90$
+$u_n=90$
 
 $u_{n+1} = 0,85u_n+6$
 
-a) Calculer $u_1$
+a) Calculer $u_1$.
 
 <section class="hidden">
 
@@ -18,7 +18,7 @@ $$
 
 </section>
 
-b) Démonter par réccurence que pour tout n de $I\!N$, $u_n \ge u_{n+1}$
+b) Démonter par réccurence que pour tout n de $I\!N$, $u_n \ge u_{n+1}$.
 
 <section class="hidden">
 
@@ -32,7 +32,7 @@ $$
 $$
 
 
-Supposons que pour un rang n de $I\!N$, $u_n \ge u_{n+1}$, démontrons alors que : $u_{n+1} \ge u_{n+2}$
+Supposons que pour un rang n de $I\!N$, $u_n \ge u_{n+1}$, démontrons alors que : $u_{n+1} \ge u_{n+2}$.
 
 
 On a :
@@ -47,6 +47,6 @@ $$
     \end{equation}
 $$
 
-Conclusion on a démontré par réccurence que $\forall n\in \rm I\!N,$ $u_n \ge _{n+1}$
+Conclusion on a démontré par réccurence que $\forall n\in \rm I\!N,$ $u_n \ge _{n+1}$.
 
 </section>

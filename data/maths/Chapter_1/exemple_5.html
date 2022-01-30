@@ -1,0 +1,56 @@
+<h1 id="exemple-5">Exemple 5</h1>
+<p><span class="math inline">\(\large u_0=1\)</span><br />
+<span class="math inline">\(\large u_{n+1} = \frac {\large u_n}{ 1+ \large u_n}\)</span></p>
+<p><span class="math inline">\(V_n= \frac{\large 1}{\large u_n}\)</span></p>
+<ol type="a">
+<li>Démontrer que <span class="math inline">\((V_n)\)</span> est une suite arithmétique.</li>
+</ol>
+<section class="to-know">
+<p>Il faut prouver que : <span class="math inline">\(V_{n+1}-V_n=r\)</span></p>
+</section>
+<section class="hidden">
+<p><span class="math display">\[
+    \begin{array}{rl}
+    V_{n+1}-V_n &amp;= \frac{\large 1}{\large u_{n+1}} - \frac{\large 1}{\large u_n} \\\\
+    &amp;= \frac{{\large 1}}{\frac{\large u_n}{\large 1+u_n}} \\\\
+    &amp;= \frac {\large 1+u_n}{\large u_n}  - \frac {\large 1}{\large u_n}\\\\
+    &amp;= \frac {\large 1+u_n-1}{\large u_n} \\\\
+    &amp;= \frac {\large u_n}{\large u_n} = \large 1
+    \end{array}
+\]</span></p>
+Donc, <span class="math inline">\((V_n)\)</span> est une suite arithmétique de raison <span class="math inline">\(\large r=1\)</span> et de premier terme <span class="math inline">\(V_0= \frac {\large 1}{\large u_0} = \frac {\large 1}{\large 1} = 1\)</span>
+</section>
+<ol start="2" type="a">
+<li>Exprimer <span class="math inline">\((V_n)\)</span> en fonction de n.</li>
+</ol>
+<section class="to-know">
+<p>Rappels sur les formules des suites arithmétiques :</p>
+<p><span class="math inline">\(V_n = V_0 + \large r\times n\)</span><br />
+<span class="math inline">\(V_n = V_1 + \large r(n-1)\)</span></p>
+</section>
+<section class="hidden">
+<p><span class="math display">\[
+\begin{array}{ll}
+V_n &amp;= V_0 + \large r\times n \\
+    &amp;= 1 + 1\times n \\
+    &amp;= 1+n
+\end{array}
+\]</span></p>
+</section>
+<ol start="3" type="a">
+<li>On pose : <span class="math inline">\(S = V_0 + V_1+V_2+ {...} + V_n\)</span></li>
+</ol>
+<section class="to-know">
+<p>Rappels pour calculer la somme de terme consécutifs d’une Suite Arithmétique.</p>
+<p><span class="math inline">\(S= \text{(nombre de termes)} \times \frac {\large{\text{1er terme + dernier terme}}}{\large 2}\)</span></p>
+</section>
+Exprimer <span class="math inline">\(S\)</span> en fonction de n
+<section class="hidden">
+<p><span class="math display">\[
+    \begin{array}{rl}
+    S &amp;= \large (n+1)\times \large(\frac{1+1+n}{2}) \\\\
+      &amp;= \large (n+1)\times  \large(\frac {2+n}{2}) \\\\
+      &amp;= \large \frac{\large(n+1)(2+n)}{\large 2} \\\\
+    \end{array}
+\]</span></p>
+</section>

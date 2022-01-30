@@ -1,13 +1,13 @@
 # Exemple 3 - Type DS
 
-$U_n=0,5$
+$u_n=0,5$
 
 $u_{n+1} = 0,5u_n+0,3$
 
 $V_n=u_n-0,6$
 
 
-a) Démonter que pour tout n de $I\!N$, $0 \le u_n \le 0,6$ (Soit minoré par 0 et majoré par 0,6)
+a) Démonter que pour tout n de $I\!N$, $0 \le u_n \le 0,6$ (Soit minoré par 0 et majoré par 0,6).
 
 <section class="hidden">
 
@@ -19,7 +19,7 @@ u_0=0,5
 $$
 
 
-Supposons que pour un rang n de $I\!N$, $0 \le u_n \le 0,6$, démontrons alors que : $0 \le u_{n+1} \le 0,6$
+Supposons que pour un rang n de $I\!N$, $0 \le u_n \le 0,6$, démontrons alors que : $0 \le u_{n+1} \le 0,6$.
 
 
 On a :
@@ -32,15 +32,15 @@ $$
     \end{array}
 $$
 
-Conclusion on a démontré par réccurence que $\forall n\in \rm I\!N,$ $0 \le u_n \le 0,6$
+Conclusion on a démontré par réccurence que $\forall n\in \rm I\!N,$ $0 \le u_n \le 0,6$.
 
 </section>
 
-b) Démontrer que $(V_n)$ est une suite géométrique de raison $q=0,5$
+b) Démontrer que $(V_n)$ est une suite géométrique de raison $q=0,5$.
 
 <section class="hidden">
 
-Il faut prouver que : $V_{n+1} = u_{n+1} -0,6$
+Il faut prouver que : $V_{n+1} = u_{n+1} -0,6$.
 
 $$
 \begin{array}{ll}
@@ -62,20 +62,20 @@ u_{n+1} &= 0,5(V_n+0,6) -0,3 \\
 $$
 
 donc $(U_n)$ est une suite géométriqye de raison $q=0,5$ et de premier terme \
-$v_0=u_0-0,6$ \
-$v_0=0,5-0,6$ \
-$v_0 =-0,1$
+$V_0=u_0-0,6$ \
+$V_0=0,5-0,6$ \
+$V_0 =-0,1$
 
 </section>
 
-c) Exprimer alors $V_n$ en fonction de n
+c) Exprimer alors $V_n$ en fonction de n.
 
 <section class="to-know">
 
 Rappels sur les unités géométriques :
 
-$v_n = v_0\times q^n$ \
-$v_n = v_1\times q^{n-1}$
+$V_n = V_0\times q^n$ \
+$V_n = V_1\times q^{n-1}$
 
 </section>
 
@@ -83,7 +83,7 @@ $v_n = v_1\times q^{n-1}$
 
 $$
 \begin{array}{ll}
-V_n=v_0\times q^n \\
+V_n=V_0\times q^n \\
 V_n=-0,1\times (0,5)^n
 \end{array}
 $$
