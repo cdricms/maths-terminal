@@ -43,7 +43,7 @@ $$
     0,85u_n &\ge 0,85u_{n+1} \\
 0,85u_n +6  &\ge 0,85u_{n+1}+6 \\
     u_{n+1} &\ge u_{n+2}
-    \end{split}
+    \end{split} \qquad {\text{(HDR)}}
     \end{equation}
 $$
 

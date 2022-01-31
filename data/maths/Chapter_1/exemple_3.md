@@ -30,6 +30,7 @@ $$
     0,3 \le& 0,5u_n+0,3&\le 0,6 \\
     0 \le 0,3 \le& u_{n+1} &\le 0,6
     \end{array}
+    \qquad {\text{(HDR)}}
 $$
 
 Conclusion on a démontré par réccurence que $\forall n\in \rm I\!N,$ $0 \le u_n \le 0,6$.

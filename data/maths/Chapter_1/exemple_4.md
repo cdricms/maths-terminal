@@ -28,7 +28,7 @@ $$
     0,5u_n \le 3 \\
     0,5u_n+0,3\le 6 \\
     u_{n+1} \le 6
-    \end{split}
+    \end{split} \qquad {\text{(HDR)}}
     \end{equation}
 $$
 
