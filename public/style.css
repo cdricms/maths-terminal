@@ -181,7 +181,7 @@ h2 {
   top: 0;
   bottom: 0;
   width: var(--sidebar-width);
-  font-size: 0.875em;
+  font-size: 0.885em;
   box-sizing: border-box;
   overscroll-behavior-y: contain;
   background-color: var(--accent-color);
@@ -344,6 +344,7 @@ summary {
   .sidebar {
     width: 200px;
     overflow-wrap: break-word;
+    font-size: 0.805em;
     animation-duration: 1s;
     animation-name: slide;
   }
