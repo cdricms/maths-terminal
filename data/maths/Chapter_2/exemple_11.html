@@ -1,0 +1,52 @@
+<h1 id="exemple-11---type-bac">Exemple 11 - Type BAC</h1>
+<p>On veut ranger 3 mangas et 2 BD sur la même étagère. <span class="math inline">\(\\\)</span></p>
+<ol type="1">
+<li>Combien de rangement possibles ?</li>
+</ol>
+<section class="hidden">
+<p>L’ordre intervient</p>
+<p>On modélise la situation par des permutations / arrangement d’un ensemble de 5 éléments. <span class="math inline">\(\\\)</span></p>
+<p><span class="math display">\[
+    5! = 5\times4\times3\times2\times1=120
+\]</span></p>
+</section>
+<section class="to-know">
+<p>Pour calculer avec les factorielles ( ! )</p>
+<p>Sur calculatrice : OPTN –&gt; F6 –&gt; F3 et vous trouverez en F1 <span class="math inline">\(x!\)</span></p>
+<p><span class="math inline">\(Pour faire \begin{pmatrix}  4 \\  1  \end{pmatrix} il faut : \text{OPTN --&gt; F6 --&gt; F3 --&gt; 4 --&gt; F3 --&gt; 1}\)</span></p>
+</section>
+<ol start="2" type="1">
+<li>COmbien de rangements possible si on veut les groupes par genre ?</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+    \begin{matrix}
+    M1 &amp; M2 &amp; M3 &amp; B1 &amp; B2 \quad B1 &amp; B2 &amp; M3 &amp; M2 &amp;M1 \\
+    3 &amp; 2 &amp; 1 &amp; 2 &amp; 1 \qquad 2 &amp; 1 &amp; 3 &amp; 2 &amp; 1
+    \end{matrix}
+\]</span></p>
+<span class="math inline">\((3\times2\times1\times2\times1)+(2\times1\times3\times2\times1)=24\)</span>
+</section>
+<ol start="3" type="1">
+<li>Combien de rangements possible commençant par une BD ?</li>
+</ol>
+<section class="hidden">
+<p><span class="math display">\[
+    \begin{matrix}
+    Place 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+    2 &amp; 4 &amp; 3 &amp; 2 &amp; 1
+    \end{matrix}
+\]</span></p>
+<p><span class="math inline">\(2\times4\times3\times2\times1=48\)</span></p>
+</section>
+<ol start="4" type="1">
+<li>Si vous ne vous rappelez plus de la notations et de la logique, voici des explications.</li>
+</ol>
+<section class="hidden">
+<p>Rappel à la question 2 : les M correspondent aux Mangas et les B aux BD. <span class="math inline">\(\\\)</span></p>
+<p>Ainsi au rangement M1 on à 3 mangas de disponible puis au rangement M2 nous en avons plus que 2 etc. <span class="math inline">\(\\\)</span></p>
+<p>Rappel à la question 3 : <span class="math inline">\(\\\)</span></p>
+<p>Ici pour la place 1 on doit y ranger une BD nous en avons donc 2. <span class="math inline">\(\\\)</span></p>
+<p>Pour la place 2 on note 4 car nous avons 3 mangas et l’on ajoute la BD qui n’est pas ranger à la place 1. <span class="math inline">\(\\\)</span></p>
+<p>En espérant que les explications ont été claires et vous ont aidées.</p>
+</section>
