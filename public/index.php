@@ -1,11 +1,21 @@
 <?php include("../db.php"); ?>
+<?php 
+  if (isset($_GET['t'])) {
+    $t = $_GET['t'];
+    list($chapter_id, $examples_number) = explode("-", $t);
+  }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <?php 
+      if (!(empty($chapter_id) and empty($examples_number))) echo '<title>Exemple: '. $chapter_id . ' - ' . $examples_number . '</title>';
+      else echo '<title>Accueil</title>';
+    ?>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -130,14 +140,9 @@
 
             // Check if the arguement t is set in the url
             // if not send error.html
-            if (isset($_GET['t'])) {
+            if (!(empty($chapter_id) or empty($examples_number))) {
 
-                $t = $_GET['t'];
-                // Destructure the value of t
-                list($chapter_id, $examples_number) = explode("-", $t);
-                
                 // if they are empty send error.html 
-                if (!(empty($chapter_id) or empty($examples_number))) {
                     // Query the correct example based on the example number and its chapter
                     $sql = "SELECT * FROM chapters JOIN examples ON chapters_id=examples_chapter_id WHERE examples_number=$examples_number AND chapters_id=$chapter_id";
                     
@@ -156,7 +161,6 @@
                     }
                     
                 } else include "./error.html" ;
-            } else include "./error.html";
 
         ?>
 
