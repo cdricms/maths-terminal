@@ -11,15 +11,14 @@ services:
       - ./:/var/www/html/
     ports:
       - 80:80
+    env_file:
+      - '.env'
   db:
     container_name: db
     image: mysql
     restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: maths
-      MYSQL_USER: maths
-      MYSQL_PASSWORD: 1234
+    env_file:
+      - '.env'
     ports:
       - "3306:3306"
   phpmyadmin:
